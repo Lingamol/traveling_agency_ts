@@ -1,0 +1,53 @@
+@import "../../../sass/index.scss";
+
+.nav {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+@media screen and (max-width: $mobile) {
+  .nav {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+  /* display: flex;
+  align-items: center; */
+  width: 120px;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+@media screen and (max-width: $mobile) {
+  .nav-link:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and ((min-width: $mobile) and (max-width: $tablet)) {
+  .nav-link:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .nav-link:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.active {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--white);
+}

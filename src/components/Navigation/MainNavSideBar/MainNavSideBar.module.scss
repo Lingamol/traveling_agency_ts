@@ -1,0 +1,91 @@
+@import "../../../sass/index.scss";
+
+.nav-side-bar {
+  padding-top: var(--header-height);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  //   ${media.mobile} {
+  //     height: 100vh;
+  //   }}
+
+  transition: 250ms;
+  transition-property: transform;
+  transition-timing-function: ease;
+  background-color: var(--teal);
+  overflow: auto;
+  transform: translateY(-100%);
+}
+
+.selected {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: $mobile) {
+  .nav-side-bar {
+    height: 100vh;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
+
+// export const Wrapper = styled.div`
+
+//   /* transform: translateY(-100%); */
+//   transition: 250ms;
+//   transition-property: transform;
+//   transition-timing-function: ease;
+//   background-color: ${props => props.theme.menuBackground};
+//   overflow: auto;
+//   transform: ${props => {
+//     let translate = 'translateY(-100%)';
+
+//     if (props.isSelected === 'true') {
+//       translate = 'translateY(0%)';
+//     }
+
+//     if (!props.isSelected === 'false') {
+//       translate = 'translateY(-100%)';
+//     }
+
+//     return translate;
+//   }};
+// `;
+
+// export const Tab = styled.div``;
+
+// .container-menu {
+//   border: 2px solid greenyellow;
+
+//   margin: 0 auto;
+//   padding: 0 16px;
+// }
+// @media screen and (max-width: $tablet) {
+//   .container-menu {
+//     padding: 0 32px;
+//   }
+// }
+
+// @media screen and (max-width: $mobile) {
+//   .container-menu {
+//     padding: 0 20px;
+//   }
+// }
+//  ${media.tablet} {
+//     padding: 0 32px;
+//     /* width: 768px; */
+//   }
+
+//   ${media.mobile} {
+//     padding: 0 20px;
+//     /* width: 480px; *
+.flex {
+  display: flex;
+}

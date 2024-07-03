@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+
+  --iconBlue: #02adef;
+  --accentBlue: #2196f3;
+  --accent: #f59256;
+  --background: #fdf7f2;
+  --accentButton: #ff6101;
+  --black: #111111;
+  --newsText: #111321;
+  --maleColor: #23c2ef;
+  --femaleColor: #ff8787;
+  --accentHover: #ff6101;
+  --bluePets: #3091eb;
+  --white: #ffffff;
+  --gray: rgba(17, 17, 17, 0.6);
+  --gradient: linear-gradient(90deg, #ff634e 0%, #ffdf48 105.44%);
+  --shadow: rgba(49, 21, 4, 0.07);
+
+  --blue: #3b5998;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ee3a5a;
+  --orange: #fccd34;
+  --yellow: #ffc107;
+  --green: #acc945;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --grayTravel: #dadada;
+  --grayDark: #536773;
+  --primary: #3b5998;
+  --lightGrey: #f1f1f3;
+  --secondary: #dadada;
+  --success: #acc945;
+  --info: #17a2b8;
+  --warning: #fccd34;
+  --danger: #ee3a5a;
+  --light: #f8f9fa;
+  --dark: #536773;
+  --header-color: transparent;
+  --header-color-scroll: #ffffff;
+
+  /* height */
+  --header-height: 58px;
+  /* media */
+  --mobile: 766px;
+  --tablet: 1279px;
+  --desktop: 1280px;
+}

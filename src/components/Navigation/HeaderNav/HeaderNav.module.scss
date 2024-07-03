@@ -1,0 +1,54 @@
+@import "../../../sass/index.scss";
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+@media screen and (max-width: $mobile) {
+  .nav-list {
+    flex-direction: row-reverse;
+    margin-right: 10px;
+  }
+}
+.nav-item:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.button-name {
+  color: var(--white-color);
+}
+
+.scroll {
+  color: var(--black);
+}
+
+.icon-user {
+  height: 18px;
+  width: auto;
+  fill: currentColor;
+}
+.icon-hamburger {
+  height: 20px;
+  width: auto;
+  fill: currentColor;
+}
+.icon-search {
+  /* ${media.mobile} {
+    height: 30px;
+  } */
+  height: 20px;
+  width: auto;
+  fill: currentColor;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+/* @media screen and (max-width: 1280px) {
+  .button-name {
+    color: pink;
+  }
+} */

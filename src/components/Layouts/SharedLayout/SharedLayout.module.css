@@ -4,3 +4,9 @@
 .NavLink:active {
   color: orange;
 }
+
+.HeaderFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -5,7 +5,7 @@ type Props = { children: React.ReactNode };
 
 const Container: React.FC<Props> = ({ children }: Props) => {
   return (
-    <div className={css.Container}>
+    <div className={css.container}>
       {/* <h1>Container</h1> */}
       {children}
     </div>

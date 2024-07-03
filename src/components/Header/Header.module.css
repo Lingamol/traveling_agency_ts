@@ -1,4 +1,81 @@
-.Header {
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+.header-wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  border: 2px solid pink;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: transparent;
+  transition: background-color 0.3s linear;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
+.scroll {
+  background-color: var(--header-color-scroll);
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+/* //////////////////////////////////////////////////////////////////// */
+/* .header {
+  height: var(--header-height);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: transparent;
+ 
+}
+
+.scroll {
+  background: var(--header-color-scroll);
+
+} */
+
+/* &:has(.current) {
+    background: white;
+    .nav-button {
+      color: ${colors.black};
+      fill: ${colors.black};
+    }
+  } */
+/* background-color: ${props => props.theme.primary}; */
+/* transition: background-color 0.3s linear; */
+/* &:hover {
+    background-color: white;
+  } */
+/* &:hover.header {
+    color: ${colors.black};
+    fill: ${colors.black};
+  } */
+/* 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`; */
+/* export const NavContainer = styled.div` */

@@ -1,0 +1,36 @@
+@import "../../../sass/index.scss";
+.search-side-bar {
+  padding-top: var(--header-height);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  //   ${media.mobile} {
+  //     height: 100vh;
+  //   }}
+
+  transition: 250ms;
+  transition-property: transform;
+  transition-timing-function: ease;
+  background-color: var(--yellow);
+  overflow: auto;
+  transform: translateY(-100%);
+}
+
+.selected {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: $mobile) {
+  .search-side-bar {
+    height: 100vh;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
