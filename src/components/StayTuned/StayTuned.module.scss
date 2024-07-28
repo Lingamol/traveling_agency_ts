@@ -1,0 +1,32 @@
+.section {
+  background-color: var(--gray-stayTuned);
+  padding: 24px 0px;
+}
+.container {
+  max-width: 555px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 360px;
+    padding: 0px 16px;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media (min-width: 576px) {
+  .text {
+    text-align: left;
+  }
+}
+.header {
+  text-align: left;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}

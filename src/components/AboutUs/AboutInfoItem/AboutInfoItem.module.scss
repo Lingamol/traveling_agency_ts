@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  justify-content: flex-start;
+  //   display: grid;
+  //   grid-template-columns: 70px auto;
+  //   column-gap: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  //   align-items: end;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}
+.tumb {
+  color: var(--gray-dark);
+  padding-top: 16px;
+  margin-left: 16px;
+  text-align: left;
+}
+.itemInfo {
+  display: flex;
+  align-items: center;
+}
+.amount {
+  font-size: 25px;
+  margin-right: 8px;
+}
+.caption {
+}

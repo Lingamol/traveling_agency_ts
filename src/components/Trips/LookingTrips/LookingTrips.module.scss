@@ -1,0 +1,73 @@
+.list {
+  padding: 0 0.938rem;
+}
+.item {
+}
+
+.button {
+  min-height: 220px;
+  width: 100%;
+  border-radius: 2.813rem;
+  padding: 1.5rem;
+  color: var(--white);
+  background: none;
+  border: none;
+}
+.look {
+  background-image: url("../../../img/looking/new-travel-background.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.look-title {
+  font-size: 26px;
+}
+
+.calendar {
+  //   grid-area: calendar;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--cyan);
+
+  //   border-radius: 2.813rem;
+  //   padding: 1.5rem;
+  transition: transform 0.3s ease;
+  word-break: normal;
+  text-transform: uppercase;
+}
+.calendar-title {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.calendar-icon {
+  width: 172px;
+  height: 200px;
+  fill: aqua;
+}
+.faq {
+  background-color: #f2bc38;
+}
+.party {
+  background-image: url("../../../img/looking/travel-party-background.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+// font: normal normal 1.625rem / 1.625rem Roboto-Regular, sans-serif;
+//         padding: 0 .938rem;
+//         grid-gap: .938rem;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 15.625rem 15.625rem 15.625rem 15.625rem;
+//         grid-template-areas:
+//         "look"
+//         "calendar"
+//         "faq"
+//         "party";
+//     }
+// }

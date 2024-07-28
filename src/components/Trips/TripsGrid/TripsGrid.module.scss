@@ -1,0 +1,96 @@
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: 22px;
+  padding: 20px;
+
+  justify-content: center;
+  grid-template-areas:
+    "look "
+    "calendar"
+    "faq"
+    "party";
+}
+.grid-item {
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: hwb(2 41% 0%);
+  color: #ffeead;
+  border-radius: 2.813rem;
+  min-height: 250px;
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 340px 360px;
+    grid-template-rows: repeat(3, 280px);
+    grid-template-areas:
+      "look calendar "
+      "look faq"
+      "party party";
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    // grid-template-columns: repeat(3, minmax(340px, 1fr));
+    grid-template-columns: 340px repeat(2, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    grid-template-areas:
+      "look calendar faq"
+      "look party party";
+  }
+  // .look {
+  //   max-width: 340px;
+  // }
+}
+
+.look {
+  grid-area: look;
+  background-image: url("../../../img/looking/new-travel-background.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.look-title {
+  font-size: 26px;
+}
+
+.calendar {
+  grid-area: calendar;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--cyan);
+
+  //   border-radius: 2.813rem;
+  //   padding: 1.5rem;
+  transition: transform 0.3s ease;
+  word-break: normal;
+  text-transform: uppercase;
+}
+.calendar-title {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.calendar-icon {
+  width: 172px;
+  height: 200px;
+  fill: aqua;
+}
+.faq {
+  grid-area: faq;
+  background-color: #f2bc38;
+}
+.party {
+  grid-area: party;
+  background-image: url("../../../img/looking/travel-party-background.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}

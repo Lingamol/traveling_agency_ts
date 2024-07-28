@@ -1,0 +1,21 @@
+.about {
+  padding: 48px 0;
+  background-color: var(--gray);
+}
+
+.header {
+  margin-bottom: 8px;
+  font-size: 35px;
+  color: var(--aboutText);
+  text-align: center;
+}
+.description {
+  padding: 8px 8px 0 8px;
+}
+
+.text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--gray-dark);
+  text-align: left;
+}

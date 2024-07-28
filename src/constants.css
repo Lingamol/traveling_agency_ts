@@ -8,6 +8,7 @@
   --accentButton: #ff6101;
   --black: #111111;
   --newsText: #111321;
+  --aboutText: #1b2a31;
   --maleColor: #23c2ef;
   --femaleColor: #ff8787;
   --accentHover: #ff6101;
@@ -27,10 +28,13 @@
   --green: #acc945;
   --teal: #20c997;
   --cyan: #17a2b8;
-  --grayTravel: #dadada;
-  --grayDark: #536773;
+  --white: #fff;
+  --gray: #dadada;
+  --gray-dark: #536773;
+  --gray-stayTuned: #f3f3f3;
+  --gray: #f2f5f7;
   --primary: #3b5998;
-  --lightGrey: #f1f1f3;
+  --light-grey: #f1f1f3;
   --secondary: #dadada;
   --success: #acc945;
   --info: #17a2b8;
@@ -38,8 +42,59 @@
   --danger: #ee3a5a;
   --light: #f8f9fa;
   --dark: #536773;
+  --name: #212529;
+  --read: #a1aeb7;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Roboto", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
   --header-color: transparent;
   --header-color-scroll: #ffffff;
+
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: hsla(0, 0%, 100%, 0.7);
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(
+    90deg,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
 
   /* height */
   --header-height: 58px;

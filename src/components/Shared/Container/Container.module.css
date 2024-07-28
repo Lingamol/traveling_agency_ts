@@ -1,10 +1,10 @@
 .container {
   outline: 2px solid red;
-  /* max-width: 1280px; */
+  max-width: 1200px;
   margin: 0 auto;
-  /* width: 100%; */
+  width: 100%;
 }
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }
@@ -20,4 +20,4 @@
     padding: 0 30px;
     max-width: 1280px;
   }
-}
+} */

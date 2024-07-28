@@ -18,7 +18,7 @@ const ButtonNav: React.FC<Props> = ({
   isScrolled,
 }) => {
   function handleOnChange(event: React.MouseEvent<HTMLButtonElement>) {
-    const button = event.target as HTMLButtonElement;
+    const button = event.currentTarget as HTMLButtonElement;
     setActiveItem(button.name);
   }
 
@@ -26,7 +26,7 @@ const ButtonNav: React.FC<Props> = ({
     <button
       className={`${css["nav-button"]} ${
         activeItem === name ? css.current : ""
-      } ${isScrolled ? css.scroll : ""} ${name === "user" ? css.user : ""}`}
+      } ${isScrolled ? css.scroll : ""} `}
       onMouseOver={handleOnChange}
       onClick={handleOnChange}
       name={name}

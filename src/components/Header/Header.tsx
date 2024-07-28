@@ -7,13 +7,14 @@
 // };
 // export default Header;
 import React from "react";
-import Logo from "../Logo";
+// import Logo from "../Logo";
 // import HeaderNav from "components/HeaderNav/HeaderNav";
-import "./Header.module.css";
-import css from "./Header.module.css";
+
+import css from "./Header.module.scss";
 // import ButtonTheme from "components/ButtonTheme/ButtonTheme";
 // import LanguageList from "components/LanguageList/LanguageList";
 import { useState } from "react";
+
 // import useMatchMedia from "../../hooks/useMatchMedia";
 // import useMatchMedia from "../../hooks/useMatchMedia";
 // import MainNavSideBar from "components/MainNav/MainNavSideBar/MainNavSideBar";
@@ -24,6 +25,7 @@ import HeaderNav from "../Navigation/HeaderNav";
 import MainNavSideBar from "../Navigation/MainNavSideBar";
 import MainNavSearch from "../Navigation/MainNavSearch";
 import MainNavUserMenu from "../Navigation/MainNavUserMenu";
+import LogoMain from "../LogoMain";
 
 const Header: React.FC = () => {
   // const { isMobile } = useMatchMedia();
@@ -35,17 +37,21 @@ const Header: React.FC = () => {
   const onMouseLeave = () => {
     setActiveItem("");
   };
+  const scrolled = scrollTop > 0 || Boolean(activeItem);
   return (
     <div className={css["header-fixed"]}>
       <div className={css["header-wrapper"]}>
-        <div className={`${css.header} ${scrollTop ? css.scroll : ""}`}>
+        <div className={`${css.header} ${scrolled ? css.scroll : ""}`}>
           {/* <div className={css["header-flex"]}> */}
-          <Logo />
+          {/* <Logo /> */}
+          <div className={css["logo-wraper"]}>
+            <LogoMain />
+          </div>
           <div className={css["nav-container"]}>
             <HeaderNav
               setActiveItem={setActiveItem}
               activeItem={activeItem}
-              isScrolled={scrollTop > 0}
+              isScrolled={scrolled}
             />
           </div>
           {/* </div> */}
