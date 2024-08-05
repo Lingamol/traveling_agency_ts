@@ -1,5 +1,5 @@
 .card {
-  max-width: 382px;
+  // max-width: 382px;
   height: 440px;
   background-color: var(--white);
   border-radius: 2.815rem;
@@ -40,8 +40,9 @@
   display: block;
 }
 
-.rating-wrapper {display: flex;
-    flex-direction: column;
+.rating-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .review-date {

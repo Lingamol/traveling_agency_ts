@@ -1,3 +1,19 @@
+// .button {
+//   border-radius: 50%;
+//   width: 42px;
+//   height: 42px;
+//   background-color: var(--green);
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   position: absolute;
+//   top: 50%;
+
+// }
+// .right {
+//   right: 16px;
+// }
+// .left{  left: 16px;}
 .button {
   border-radius: 50%;
   width: 42px;
@@ -8,9 +24,13 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-
+  transform: translateY(-50%);
 }
-.right {
+
+.swiper-button-next {
   right: 16px;
 }
-.left{  left: 16px;}
+
+.swiper-button-prev {
+  left: 16px;
+}

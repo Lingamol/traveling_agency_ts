@@ -1,0 +1,32 @@
+.title {
+  color: var(--read);
+  margin-bottom: 16px;
+  display: block;
+}
+.contact-info {
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+  stroke: var(--white);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-content {
+  color: var(--white);
+  display: flex;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.phone {
+  margin-bottom: 8px;
+  color: currentColor;
+}

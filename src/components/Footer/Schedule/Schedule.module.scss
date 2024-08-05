@@ -1,0 +1,27 @@
+.title {
+  color: var(--read);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-content {
+  color: var(--white);
+  display: flex;
+}
+.schedule {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.text {
+  margin-bottom: 8px;
+}

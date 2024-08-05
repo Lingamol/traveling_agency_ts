@@ -1,0 +1,30 @@
+.container {
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  margin: 0 0.1rem;
+  --bg-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  // color: var()
+}
+
+.item:hover,
+.item:focus {
+  background-color: var(--bg-color);
+}

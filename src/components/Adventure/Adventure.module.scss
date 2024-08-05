@@ -1,0 +1,29 @@
+.adventure {
+  background-image: url("../../img/adventure/adventure.webp");
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--white);
+  font-size: 40px;
+}
+.button {
+  outline: none;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.88rem;
+  width: 15.375rem;
+  height: 2.75rem;
+  border-radius: 0.125rem;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  font-size: 16px;
+}

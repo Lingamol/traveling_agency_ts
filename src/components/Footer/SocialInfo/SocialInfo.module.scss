@@ -1,0 +1,32 @@
+.title {
+  color: var(--read);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .item {
+    align-self: center;
+  }
+}
+.item-content {
+  color: var(--white);
+  display: flex;
+}
+.schedule {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.text {
+  margin-bottom: 8px;
+}

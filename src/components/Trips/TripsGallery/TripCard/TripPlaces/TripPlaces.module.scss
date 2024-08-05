@@ -1,0 +1,15 @@
+.places {
+  font-size: 24px;
+  text-transform: lowercase;
+  display: block;
+  margin: 18px 0 12px;
+}
+.full {
+  color: var(--green);
+}
+.available {
+  color: var(--yellow);
+}
+.no-available {
+  color: var(--red);
+}

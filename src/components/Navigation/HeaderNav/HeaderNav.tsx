@@ -17,7 +17,7 @@ const HeaderNav: React.FC<Props> = ({
   isScrolled,
 }) => {
   const { isMobile } = useMatchMedia();
-  console.log("isMobile", isMobile);
+  // console.log("isMobile", isMobile);
   return (
     <ul className={css["nav-list"]}>
       <li className={css["nav-item"]}>
